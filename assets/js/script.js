@@ -5,9 +5,9 @@ let comScore = 0;
 
 let fiveRoundGame = function() {
 
-  for (let i = 0; i < 5; i++)
+  // for (let i = 0; i < 5; i++)
 
-  {
+  // {
 
     let randomNum = Math.floor(Math.random() * 3);
 
@@ -77,7 +77,7 @@ let fiveRoundGame = function() {
 
       
 
-    }
+    // }
 
     getComputerChoice();
 
@@ -89,7 +89,9 @@ let fiveRoundGame = function() {
   } else if (humanScore < comScore) {
     alert("Com wins!")
     console.log("Com wins");
-  }
+  } else {
+    alert("Human and Com tied!")
+  };
 
 }
 
