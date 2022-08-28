@@ -2,15 +2,19 @@ let choiceArray = ['rock', 'paper', 'scissors'];
 let humanScore = 0;
 let comScore = 0;
 
+const allBtns = document.querySelector('.choice-container')
+const rockBtn = document.querySelector('.rock-btn');
+const paperBtn = document.querySelector('.paper-btn');
+const scissorBtn = document.querySelector('.scissor-btn');
 
-let fiveRoundGame = function() {
+
+let startRound = function(e) {
 
   // for (let i = 0; i < 5; i++)
 
   // {
 
     let randomNum = Math.floor(Math.random() * 3);
-
 
 
     let getComputerChoice = function() {
@@ -25,9 +29,7 @@ let fiveRoundGame = function() {
 
     let getPlayerChoice = function(comChoice) {
 
-      playerNumChoice = parseInt(prompt('Welcometo Rock Paper Scissors! Please enter 0 to choose Rock, 1 to choose paper, and 2 to choose scissors!'));
-
-      playerChoice = choiceArray[playerNumChoice];
+      if e.target
 
       console.log("player chose " + playerChoice)
 
@@ -95,4 +97,5 @@ let fiveRoundGame = function() {
 
 }
 
-fiveRoundGame();
+allBtns.addEventListener('click', startRound);
+

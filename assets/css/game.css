@@ -2,17 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-shadow: 2px 2px #ff0000;
   scroll-padding-bottom: 0;
 }
 
-a {
-  all: unset;
-}
+
 
 @font-face {
   font-family: mySpaceFont;
   src: url('../fonts/Moondance.otf');
+}
+a {
+  color: white;
+  font-family: mySpaceFont;
+text-decoration: none;
+}
+
+li{
+  font-size: large;
+  margin: 10px;
+  padding: 10px;
 }
 
 html { 
@@ -26,6 +34,8 @@ html {
 .big-txt {
   font-size: 78px;
 }
+
+
 
 h1{
   font-family: mySpaceFont;
@@ -60,12 +70,11 @@ header {
   flex-wrap: wrap;
 }
 
-.gameplay-box:hover {
+/* .gameplay-box:hover {
   background: rgb(230, 93, 254);
   background: linear-gradient(0deg, rgb(227, 100, 249) 0%, rgb(109, 251, 211) 100%);
   border: 10px solid peachpuff;
-  cursor: pointer;
-}
+} */
 
 .gameplay-text {
   flex-basis: 100%;
@@ -106,6 +115,8 @@ header {
   height: 300px;
   align-items: start;
   transition: 0.2s all ease;
+  display: flex;
+  justify-content: center;
 }
 
 .choice-btn:hover {
@@ -114,20 +125,14 @@ header {
 }
 
 .rock-btn {
-  display: flex;
-  justify-content: center;
   background-image: url('../images/rock.jpg');
   background-size: cover;
 }
 .paper-btn {
-  display: flex;
-  justify-content: center;
   background-image: url('../images/paper.jpg');
    background-size: cover;
 }
 .scissors-btn {
-  display: flex;
-  justify-content: center;
   background-image: url('../images/scissors.jpg');
    background-size: cover;
 }
