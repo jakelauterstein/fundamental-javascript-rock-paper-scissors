@@ -46,7 +46,7 @@ h1{
 
 header {
   margin: 0 auto;
-  padding:50px;
+  padding:20px;
 }
 
 .main-container {
@@ -56,7 +56,7 @@ header {
 }
 
 .gameplay-box {
-  flex-basis: 60%;
+  flex-basis: 80%;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -80,8 +80,14 @@ header {
   flex-basis: 100%;
   font-family: mySpaceFont;
   font-size: 40px;
-  padding: 20px;
+  padding: 10px;
   color:rgb(255, 242, 230);
+}
+.chaos-hap-com {
+  width: 50%;
+  border: 3px solid black;
+  border-radius: 20px;
+  margin: 10px;
 }
 
 .choice-container {
@@ -92,12 +98,7 @@ header {
   flex-wrap: wrap;
 }
 
-.chaos-hap-com {
-  width: 50%;
-  border: 3px solid black;
-  border-radius: 20px;
-  margin: 10px;
-}
+
 .console {
   margin-top: 40px;
 }
