@@ -2,6 +2,11 @@ let choiceArray = ['ROCK', 'PAPER', 'SCISSORS'];
 let humanScore = 0;
 let comScore = 0;
 let i = 1;
+let comScoreHTML = document.getElementById('com-score')
+let humScoreHTML = document.getElementById('hum-score')
+
+let comScoreEl = document.createElement('span');
+let humScoreEl = document.createElement('span');
 
 const allBtns = document.querySelector('.choice-container')
 const rockBtn = document.querySelector('.rock-btn');
@@ -58,7 +63,32 @@ const startRound = function(e) {
         comScore +=1;
       };
 
+      if (i === 1) {
+
+      comScoreEl.innerText = comScore.toString();
+      let list = comScoreEl.classList;
+      list.add('med-txt')
+      comScoreHTML.appendChild(comScoreEl);
+
+    
+      humScoreEl.innerText = humanScore.toString();
+      let list2 = humScoreEl.classList;
+      list2.add('med-txt')
+      humScoreHTML.appendChild(humScoreEl);
+
       i++;
+
+    } else if (i > 1) {
+      comScoreEl.innerText = comScore.toString();
+      
+      humScoreEl.innerText = humanScore.toString();
+
+      i++;
+
+    }
+
+
+      
 
       if (i <= 5) {
 
