@@ -88,30 +88,48 @@ const startRound = function(e) {
     }
 
 
+    if ( humanScore == 5 || comScore == 5) {
+
+      if ( humanScore > comScore ) {
+        alert("Human wins!")
+          console.log("Human wins");
+      } else {
+        alert("Com wins!")
+          console.log("Chaos computer wins");
+      }
+
+      i = 1;
+
+      comScore = 0;
+      humanScore = 0;
+
+    }
+
+
       
 
-      if (i <= 5) {
+      // if (i <= 5) {
 
-        window.alert(`Click the icons to make your choice for round ${i}`)
+      //   window.alert(`Click the icons to make your choice for round ${i}`)
 
-      } else if ( i = 5) {
-        window.alert(`The Game Has Ended! 
-        Player final score is ${humanScore} 
-        and the chaos computer score is ${comScore}!`)
+      // } else if ( i = 5) {
+      //   window.alert(`The Game Has Ended! 
+      //   Player final score is ${humanScore} 
+      //   and the chaos computer score is ${comScore}!`)
 
-        if (comScore < humanScore) {
-          alert("Human wins!")
-          console.log("Human wins");
-        } else if (humanScore < comScore) {
-          alert("Com wins!")
-          console.log("Chaos computer wins");
-        } else {
-          alert("Human and Computer tied!")
-        };
+      //   if (comScore < humanScore) {
+      //     alert("Human wins!")
+      //     console.log("Human wins");
+      //   } else if (humanScore < comScore) {
+      //     alert("Com wins!")
+      //     console.log("Chaos computer wins");
+      //   } else {
+      //     alert("Human and Computer tied!")
+      //   };
 
-        i = 1;
+      //   i = 1;
 
-      };
+      // };
 
 
 }
